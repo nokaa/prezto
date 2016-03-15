@@ -11,3 +11,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+# Export neovim as editor, alias n to nvim
+export EDITOR=nvim
+export SUDO_EDITOR=nvim
+alias n=nvim
+
+# alias firefox to firefox-developer
+alias firefox=firefox-developer
+
+# Location of user bin
+export MYPATH=$HOME/bin
+
+# Golang path variable
+export GOPATH=$HOME/gocode
+
+# Export PATH variable
+export PATH=$PATH:$MYPATH:$GOPATH/bin
+
+# Keychain
+eval $(keychain --eval --quiet id_rsa)
