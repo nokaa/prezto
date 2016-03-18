@@ -30,3 +30,7 @@ export PATH=$PATH:$MYPATH:$GOPATH/bin
 
 # Keychain
 eval $(keychain --eval --quiet id_rsa)
+
+# Node Version Manager info
+export NVM_DIR="/home/nokaa/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
