@@ -23,14 +23,23 @@ alias magit="n -c MagitOnly"
 # alias firefox to firefox-developer
 alias firefox=firefox-developer
 
+# Have krill load feeds by default
+alias krill="krill -S ~/.krill"
+
 # Location of user bin
 export MYPATH=$HOME/bin
 
 # Golang path variable
 export GOPATH=$HOME/gocode
+#
+# Path for cabal installs
+export CABALBIN=$HOME/.cabal/bin
+
+# Path for rbenv
+export RBENV_PATH=$HOME/.rbenv/bin
 
 # Export PATH variable
-export PATH=$PATH:$MYPATH:$GOPATH/bin
+export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH
 
 # Keychain
 eval $(keychain --eval --quiet id_rsa)
@@ -38,3 +47,13 @@ eval $(keychain --eval --quiet id_rsa)
 # Node Version Manager info
 export NVM_DIR="/home/nokaa/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Stuff for OCaml
+# OPAM configuration
+. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# rbenv
+eval "$(rbenv init -)"
+
+# List todo
+task list
