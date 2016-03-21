@@ -15,6 +15,9 @@ fi
 export EDITOR=nvim
 export SUDO_EDITOR=nvim
 alias n=nvim
+
+# Git aliases, because I'm lazy
+alias g=git
 alias magit="n -c MagitOnly"
 
 # alias firefox to firefox-developer
