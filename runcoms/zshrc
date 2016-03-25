@@ -45,8 +45,8 @@ export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH
 eval $(keychain --eval --quiet id_rsa)
 
 # Node Version Manager info
-export NVM_DIR="/home/nokaa/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="/home/nokaa/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Stuff for OCaml
 # OPAM configuration
