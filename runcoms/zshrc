@@ -16,6 +16,9 @@ export EDITOR=nvim
 export SUDO_EDITOR=nvim
 alias n=nvim
 
+# Force emacs to open in terminal mode
+alias emacs="emacs -nw"
+
 # Alias for opening nvim with vimagit
 alias magit="n -c MagitOnly"
 
@@ -24,6 +27,10 @@ alias firefox=firefox-developer
 
 # Have krill load feeds by default
 alias krill="krill -S ~/.krill"
+
+# Transmission directories
+export TRANSMISSION_DOWNLOAD_DIR=/media/Poseidon/Downloads
+export TRANSMISSION_WATCH_DIR=$TRANSMISSION_DOWNLOAD_DIR/torrents
 
 # Location of user bin
 export MYPATH=$HOME/bin
