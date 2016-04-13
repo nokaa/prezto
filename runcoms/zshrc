@@ -19,8 +19,9 @@ alias n=nvim
 # Force emacs to open in terminal mode
 alias emacs="emacs -nw"
 
-# Alias for opening nvim with vimagit
-alias magit="n -c MagitOnly"
+# Have racket REPL open with better features
+# and for use with slime. Also use lang sicp
+alias racket="racket -i -l xrepl -e '(require sicp)'"
 
 # alias firefox to firefox-developer
 alias firefox=firefox-developer
