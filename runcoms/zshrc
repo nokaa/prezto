@@ -28,6 +28,9 @@ alias firefox=firefox-developer
 # Have krill load feeds by default
 alias krill="krill -S ~/.krill"
 
+# Have livestreamer use mpv as player be default
+alias livestreamer="livestreamer --player mpv"
+
 # Transmission directories
 export TRANSMISSION_DOWNLOAD_DIR=/media/Poseidon/Downloads
 export TRANSMISSION_WATCH_DIR=$TRANSMISSION_DOWNLOAD_DIR/torrents
@@ -37,15 +40,15 @@ export MYPATH=$HOME/bin
 
 # Golang path variable
 export GOPATH=$HOME/gocode
-#
-# Path for cabal installs
-export CABALBIN=$HOME/.cabal/bin
 
 # Path for rbenv
 export RBENV_PATH=$HOME/.rbenv/bin
 
+# RISCV setup
+export RISCV=$HOME/Programming/git/riscv/riscv
+
 # Export PATH variable
-export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH
+export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH:$RISCV/bin
 
 # Keychain
 eval $(keychain --eval --quiet id_rsa)
