@@ -32,9 +32,6 @@ alias krill="krill -S ~/.krill"
 # Have livestreamer use mpv as player be default
 alias livestreamer="livestreamer --player mpv"
 
-# Stack for haskell
-eval "$(stack --bash-completion-script stack)"
-
 # Transmission directories
 export TRANSMISSION_DOWNLOAD_DIR=/media/Poseidon/Downloads
 export TRANSMISSION_WATCH_DIR=$TRANSMISSION_DOWNLOAD_DIR/torrents
