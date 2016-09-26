@@ -16,18 +16,12 @@ export EDITOR=nvim
 export SUDO_EDITOR=nvim
 alias n=nvim
 
-# Force emacs to open in terminal mode
-alias emacs="emacs -nw"
-
 # Have racket REPL open with better features
 # and for use with slime. Also use lang sicp
-alias racket="racket -i -l xrepl -e '(require sicp)'"
+alias racket="racket -i -l xrepl"
 
 # alias firefox to firefox-developer
 alias firefox=firefox-developer
-
-# Have krill load feeds by default
-alias krill="krill -S ~/.krill"
 
 # Have livestreamer use mpv as player be default
 alias livestreamer="livestreamer --player mpv"
@@ -48,8 +42,11 @@ export RBENV_PATH=$HOME/.rbenv/bin
 # RISCV setup
 export RISCV=$HOME/Programming/git/riscv/riscv
 
+# Rust bins
+export RUSTPATH=$HOME/.cargo/bin
+
 # Export PATH variable
-export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH:$RISCV/bin
+export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH:$RISCV/bin:$RUSTPATH
 
 # Keychain
 eval $(keychain --eval --quiet id_rsa)
@@ -63,7 +60,4 @@ eval $(keychain --eval --quiet id_rsa)
 . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # rbenv
-eval "$(rbenv init -)"
-
-# List todo
-task list
+#eval "$(rbenv init -)"
