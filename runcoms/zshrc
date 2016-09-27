@@ -23,8 +23,8 @@ alias racket="racket -i -l xrepl"
 # alias firefox to firefox-developer
 alias firefox=firefox-developer
 
-# Have livestreamer use mpv as player be default
-alias livestreamer="livestreamer --player mpv"
+# Have streamlink use mpv as player be default
+alias streamlink="streamlink --player mpv"
 
 # Transmission directories
 export TRANSMISSION_DOWNLOAD_DIR=/media/Poseidon/Downloads
@@ -44,6 +44,8 @@ export RISCV=$HOME/Programming/git/riscv/riscv
 
 # Rust bins
 export RUSTPATH=$HOME/.cargo/bin
+export CARGO_HOME=$HOME/.cargo
+export RUST_SRC_PATH=$HOME/Programming/git/Rust/rust/src
 
 # Export PATH variable
 export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH:$RISCV/bin:$RUSTPATH
