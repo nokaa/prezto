@@ -26,6 +26,9 @@ alias firefox=firefox-developer
 # Have streamlink use mpv as player be default
 alias streamlink="streamlink --player mpv"
 
+# Alias chatty to run with java
+alias chatty="java -jar ~/bin/Chatty/Chatty.jar"
+
 # Transmission directories
 export TRANSMISSION_DOWNLOAD_DIR=/media/Poseidon/Downloads
 export TRANSMISSION_WATCH_DIR=$TRANSMISSION_DOWNLOAD_DIR/torrents
@@ -46,6 +49,8 @@ export RISCV=$HOME/Programming/git/riscv/riscv
 export RUSTPATH=$HOME/.cargo/bin
 export CARGO_HOME=$HOME/.cargo
 export RUST_SRC_PATH=$HOME/Programming/git/Rust/rust/src
+# Build rust for ARM
+alias cargo-arm="cargo build --release --target=armv7-unknown-linux-gnueabihf"
 
 # Export PATH variable
 export PATH=$PATH:$MYPATH:$GOPATH/bin:$CABALBIN:$RBENV_PATH:$RISCV/bin:$RUSTPATH
@@ -63,3 +68,4 @@ eval $(keychain --eval --quiet id_rsa)
 
 # rbenv
 #eval "$(rbenv init -)"
+JAVA_HOME=/usr/lib/jvm/java-8-jdk/bin/java
